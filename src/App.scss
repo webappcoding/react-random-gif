@@ -1,0 +1,66 @@
+$primary: #4527a0;
+$secondary: #c2185b;
+$white: #ffffff;
+
+.app {
+  background-color: #ebebeb;
+  height: 100vh;
+  width: 100%;
+
+  .app__header {
+    background-color: $primary;
+    padding: 15px 0px;
+    .app__title {
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  .app__main {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 64px;
+    align-items: flex-end;
+
+    .random__gif {
+      flex-grow: 1;
+      padding: 0 15px;
+
+      img {
+        // width: 100%;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: $primary;
+        color: $white;
+        font-size: large;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darken($primary, 10);
+      }
+      button:focus {
+        outline: none;
+      }
+      input {
+        width: 100%;
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      input:focus {
+        background-color: #fff;
+        border-color: $primary;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+      }
+    }
+  }
+}
