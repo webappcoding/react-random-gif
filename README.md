@@ -1,6 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### API Source
+
+[https://developers.giphy.com/](https://developers.giphy.com/)
+
+## Demo
+
+Visit here for a demo.<br />
+Open [https://react-random-gif.vercel.app/](https://react-random-gif.vercel.app/)
+
 ## Available Scripts
+
+First of all create an .env file under root dir and set your gif api key
 
 In the project directory, you can run:
 
