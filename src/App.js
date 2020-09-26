@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import RandomGif from "./components/RandomGif";
 import RandomGifTag from "./components/RandomGifTag";
 

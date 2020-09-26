@@ -1,12 +1,12 @@
 $primary: #4527a0;
 $secondary: #c2185b;
 $white: #ffffff;
-
+//app
 .app {
   background-color: #ebebeb;
   height: 100vh;
   width: 100%;
-
+  // app header
   .app__header {
     background-color: $primary;
     padding: 15px 0px;
@@ -15,7 +15,7 @@ $white: #ffffff;
       color: $white;
     }
   }
-
+  //main content
   .app__main {
     display: flex;
     width: 80%;
@@ -24,42 +24,68 @@ $white: #ffffff;
     padding-top: 64px;
     align-items: flex-end;
 
+    // gif container
     .random__gif {
-      flex-grow: 1;
-      padding: 0 15px;
+      flex: 1;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60vh;
+      padding: 15px;
+      background-color: $white;
+      border-radius: 5px;
+      overflow: hidden;
+      -webkit-box-shadow: 3px 2px 32px -1px rgba(140, 140, 140, 1);
+      -moz-box-shadow: 3px 2px 32px -1px rgba(140, 140, 140, 1);
+      box-shadow: 3px 2px 32px -1px rgba(140, 140, 140, 1);
 
-      img {
-        // width: 100%;
+      //Gif content
+      .gif__content {
+        align-self: center;
+        margin-bottom: 16px;
         border-radius: 5px;
+        overflow-x: auto;
+        img {
+          border-radius: 5px;
+        }
       }
-      button {
-        width: 100%;
-        padding: 8px 10px;
-        border-radius: 5px;
-        border: 0px;
-        background-color: $primary;
-        color: $white;
-        font-size: large;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: darken($primary, 10);
-      }
-      button:focus {
-        outline: none;
-      }
-      input {
-        width: 100%;
-        padding: 10px 5px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid gray;
-      }
-      input:focus {
-        background-color: #fff;
-        border-color: $primary;
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+      //Gif actions
+      .gif__actions {
+        button {
+          display: inline-block;
+          width: 100%;
+          padding: 10px 15px;
+          border-radius: 5px;
+          border: 0px;
+          background-color: $primary;
+          color: $white;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: darken($primary, 10);
+        }
+        button:focus {
+          border-color: $primary;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+        }
+        input {
+          width: 100%;
+          padding: 8px 12px;
+          font-size: 18px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid #333333;
+          color: #333333;
+        }
+        input:focus {
+          background-color: #fff;
+          border-color: $primary;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+        }
       }
     }
   }
